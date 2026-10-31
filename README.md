@@ -27,19 +27,7 @@ case-replay-report.md      可公开分享的短引文摘录版 Markdown（原�
 README.md                  此说明
 ```
 
-## 本地预览
 
-直接双击 `index.html` 即可打开（无跨域 fetch，归档数据内嵌）。也可以在文件夹里使用 `python -m http.server 8000`，访问 `http://127.0.0.1:8000`。
-
-## 发布到 GitHub Pages
-
-1. 在 GitHub 网站新建 **公开** repository，例如 `pubmed-evidence-agent-demo`。不要勾选初始化 README（也可以勾选，上传时覆盖同名 README 即可）。
-2. 将**此文件夹里的内容**上传到仓库根目录，注意必须在根目录看到 `index.html`，不能多包一层文件夹。
-3. 打开仓库 **Settings → Pages → Build and deployment**：Source 选 `Deploy from a branch`，Branch 选 `main`，Folder 选 `/(root)`，保存。
-4. 访问 `https://<GitHub用户名>.github.io/pubmed-evidence-agent-demo/`（实际地址以仓库页面提示为准）。
-5. 在电脑之外的设备打开网址，验证筛选、PMID 跳转、两份 Markdown 下载正常。
-
-**不用把你真实的 Python 项目文件夹直接上传为公开仓库。** 原项目包含 Git 历史、验收材料、备份，公开之前需单独审查。这里是完全独立的展示包，建议使用全新仓库。原始完整 live_report.md 和开发日志不随公开包发布。
 
 ## 搜索引擎与隐私
 
